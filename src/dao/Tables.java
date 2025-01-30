@@ -16,7 +16,8 @@ public class Tables {
         try {
             Connection con = ConnectionProvider.getCon();
             Statement st = con.createStatement();
-            st.executeUpdate("create table chamado(chamado_pk int AUTO_INCREMENT primary key, título varchar(200), descrição varchar(500),requerente varchar(200))");
+            // st.executeUpdate("create table chamado(chamado_pk int AUTO_INCREMENT primary key, título varchar(200), descrição varchar(500),requerente varchar(200))");
+            // st.executeUpdate("alter table chamado add estado varchar(50)");
         } catch(Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
